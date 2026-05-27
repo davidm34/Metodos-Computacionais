@@ -11,7 +11,6 @@ y  = [5; 10; 9; 0; 3; 27];
 n  = length(y); % Quantidade de pontos da amostra
 
 % 2. Inicialização dos acumuladores (Somatórios)
-% Esta é a etapa "oculta" no PDF, necessária para montar o sistema linear
 soma_x1 = 0; soma_x2 = 0; soma_y = 0;
 soma_x1_quad = 0; soma_x2_quad = 0;
 soma_x1_x2 = 0;
@@ -54,9 +53,7 @@ a0 = coef(1); a1 = coef(2); a2 = coef(3);
 
 fprintf('Equação do Plano:\n y = %.4f + (%.4f)*x1 + (%.4f)*x2\n\n', a0, a1, a2);
 
-% =========================================================================
-% ADIÇÃO: Análise de Erro (Coeficiente de Determinação R^2)
-% =========================================================================
+% Análise de Erro (Coeficiente de Determinação R^2)
 y_medio = soma_y / n;
 St = 0; % Soma total dos quadrados
 Sr = 0; % Soma dos quadrados dos resíduos
