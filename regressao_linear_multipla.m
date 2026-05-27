@@ -49,7 +49,7 @@ fprintf('Matriz de Somatórios (A):\n'); disp(A);
 fprintf('Vetor de Produtos (b):\n'); disp(b);
 
 % 5. Solução do sistema linear
-coef = A \ b;
+coef = gauss_pivoteamento(A, b);
 a0 = coef(1); a1 = coef(2); a2 = coef(3);
 
 fprintf('Equação do Plano:\n y = %.4f + (%.4f)*x1 + (%.4f)*x2\n\n', a0, a1, a2);
