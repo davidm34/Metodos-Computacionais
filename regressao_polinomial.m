@@ -1,6 +1,5 @@
 % =========================================================================
 % ATIVIDADE 1: Regressão Polinomial (Algoritmo de Mínimos Quadrados)
-% Sem funções nativas de resolução de sistemas lineares
 % =========================================================================
 clear; clc; close all;
 
