@@ -35,12 +35,16 @@ function [a1, a2, r2] = regressao_linear(x, y, nome_modelo)
 
     % Passo 4: Coeficiente de Determinação (r2)
     r2 = (St - Sr) / St;
+    CV = (Sy / media_y) * 100; % Coeficiente de variacao em porcentagem
+
 
     % Passo 5: Impressão dos Resultados
     fprintf('\n--- Resultados para o Modelo: %s ---\n', nome_modelo);
     fprintf('Coeficiente Angular (a1): %.4f\n', a1);
     fprintf('Coeficiente Linear (a2): %.4f\n', a2);
     fprintf('Residuo em relacao a media (St): %.4f\n', St);
+    fprintf('Media (y_barra): %.4f\n', media_y);
+    fprintf('Coeficiente de Variacao (CV): %.4f%%\n', CV);
     fprintf('Residuo em relacao ao ajuste linear (Sr): %.4f\n', Sr);
     fprintf('Desvio Padrao Total (Sy): %.4f\n', Sy);
     fprintf('Erro-padrao da Estimativa (Sy/x): %.4f\n', Sy_x);

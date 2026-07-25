@@ -4,9 +4,14 @@ function y_int = Interp_Newton(x, y, x_val)
     % y     : vetor com os valores da variável dependente (f(x) conhecidos)
     % x_val : valor de x onde desejamos calcular a interpolação
 
-    x = [-1, 0, 2];
-    y = [4, 1, -1];
-    x_val = 1;
+    % Variável independente (Altitudes de Alagoinhas, Feira e Jacobina)
+    x = [128.78, 229.52, 486.37];
+
+    % Variável dependente (Média anual exata do ano 2011 para estas cidades)
+    y = [24.291, 24.225, 23.808];
+
+    % Altitude de Serrinha (O alvo para testar o modelo)
+    x_val = 362.39;
 
     n = length(x); % Descobre o número de pontos fornecidos
 

@@ -4,9 +4,9 @@ function y_int = Interp_Lagrange(x, y, x_val)
     % y     : vetor com os valores da variável dependente
     % x_val : valor de x onde desejamos calcular a interpolação
 
-    x = [-1, 0, 2];
-    y = [4, 1, -1];
-    x_val = 1;
+    x = [747.2, 250.1, 757.5];
+    y = [26.9, 25.7, 22.9];
+    x_val = 1001.7;
 
     n = length(x); % Descobre o número de pontos fornecidos
     y_int = 0;     % Inicializa a variável que vai acumular a soma final
