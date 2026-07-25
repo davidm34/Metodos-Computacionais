@@ -15,8 +15,6 @@ function [a1, a2, r2] = regressao_linear(x, y, nome_modelo)
     media_y = sum_y / n;
 
     % Passo 2: Cálculo dos Coeficientes da Reta (y = a1*x + a2)
-    % Obs: O PDF usa a1 para inclinação e a0 para intercepto, mas
-    % adaptamos para a1 (Angular) e a2 (Linear) conforme seu pedido.
     a1 = (n * sum_xy - sum_x * sum_y) / (n * sum_x2 - sum_x^2);
     a2 = media_y - a1 * media_x;
 

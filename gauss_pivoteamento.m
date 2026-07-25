@@ -5,16 +5,7 @@
 % =========================================================================
 % 1. DEFINIÇÃO DO SISTEMA ORIGINAL E CONFIGURAÇÃO
 % =========================================================================
-
-% Definimos a matriz de coeficientes 'A' do sistema linear (3x3)
-A_orig = [ 2, -6, -1;
-          -3, -1,  7;
-          -8,  1, -2];
-
-% Definimos o vetor de termos independentes 'b' (resultados)
-b_orig = [-38;
-          -34;
-          -20];
+function x = gauss_pivoteamento(A_orig, b_orig)
 
 % Criamos cópias de segurança para preservar os dados de entrada originais
 a = A_orig;
